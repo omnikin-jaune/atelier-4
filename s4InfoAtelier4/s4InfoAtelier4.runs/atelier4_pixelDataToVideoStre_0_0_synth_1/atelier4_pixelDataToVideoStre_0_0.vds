@@ -1,0 +1,283 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jun 16 09:54:54 2022
+# Process ID: 11796
+# Current directory: /home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.runs/atelier4_pixelDataToVideoStre_0_0_synth_1
+# Command line: vivado -log atelier4_pixelDataToVideoStre_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source atelier4_pixelDataToVideoStre_0_0.tcl
+# Log file: /home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.runs/atelier4_pixelDataToVideoStre_0_0_synth_1/atelier4_pixelDataToVideoStre_0_0.vds
+# Journal file: /home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.runs/atelier4_pixelDataToVideoStre_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source atelier4_pixelDataToVideoStre_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.ipdefs/mycolorRegister_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.ipdefs/pixelDataToVideoStream_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.ipdefs/rgb2dvi'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.ipdefs/tmds_v1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/usr/share/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top atelier4_pixelDataToVideoStre_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11927
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2303.988 ; gain = 0.000 ; free physical = 5418 ; free virtual = 17118
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'atelier4_pixelDataToVideoStre_0_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_pixelDataToVideoStre_0_0/synth/atelier4_pixelDataToVideoStre_0_0.vhd:95]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_M00_AXIS_TDATA_WIDTH bound to: 24 - type: integer 
+	Parameter C_M00_AXIS_START_COUNT bound to: 32 - type: integer 
+	Parameter C_FRAMERATE bound to: 60 - type: integer 
+	Parameter C_CLK_SPEED bound to: 74250000 - type: integer 
+	Parameter C_VID_HEIGHT bound to: 224 - type: integer 
+	Parameter C_VID_WIDTH bound to: 256 - type: integer 
+INFO: [Synth 8-3491] module 'pixelDataToVideoStream_v1_0' declared at '/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/fbbd/hdl/pixelDataToVideoStream_v1_0.vhd:5' bound to instance 'U0' of component 'pixelDataToVideoStream_v1_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_pixelDataToVideoStre_0_0/synth/atelier4_pixelDataToVideoStre_0_0.vhd:186]
+INFO: [Synth 8-638] synthesizing module 'pixelDataToVideoStream_v1_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/fbbd/hdl/pixelDataToVideoStream_v1_0.vhd:70]
+	Parameter C_FRAMERATE bound to: 60 - type: integer 
+	Parameter C_CLK_SPEED bound to: 74250000 - type: integer 
+	Parameter C_VID_HEIGHT bound to: 224 - type: integer 
+	Parameter C_VID_WIDTH bound to: 256 - type: integer 
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_M00_AXIS_TDATA_WIDTH bound to: 24 - type: integer 
+	Parameter C_M00_AXIS_START_COUNT bound to: 32 - type: integer 
+WARNING: [Synth 8-614] signal 'd_stallOnFrameNb_unsigned' is read in the process but is not in the sensitivity list [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/fbbd/hdl/pixelDataToVideoStream_v1_0.vhd:129]
+WARNING: [Synth 8-614] signal 'i_aresetn' is read in the process but is not in the sensitivity list [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/fbbd/hdl/pixelDataToVideoStream_v1_0.vhd:139]
+WARNING: [Synth 8-614] signal 'i_dataValid' is read in the process but is not in the sensitivity list [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/fbbd/hdl/pixelDataToVideoStream_v1_0.vhd:183]
+WARNING: [Synth 8-614] signal 'm00_axis_tready' is read in the process but is not in the sensitivity list [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/fbbd/hdl/pixelDataToVideoStream_v1_0.vhd:214]
+WARNING: [Synth 8-614] signal 'i_dataValid' is read in the process but is not in the sensitivity list [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/fbbd/hdl/pixelDataToVideoStream_v1_0.vhd:214]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'pixelDataToVideoStream_v1_0_S00_AXI' declared at '/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/fbbd/hdl/pixelDataToVideoStream_v1_0_S00_AXI.vhd:5' bound to instance 'pixelDataToVideoStream_v1_0_S00_AXI_inst' of component 'pixelDataToVideoStream_v1_0_S00_AXI' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/fbbd/hdl/pixelDataToVideoStream_v1_0.vhd:241]
+INFO: [Synth 8-638] synthesizing module 'pixelDataToVideoStream_v1_0_S00_AXI' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/fbbd/hdl/pixelDataToVideoStream_v1_0_S00_AXI.vhd:89]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/fbbd/hdl/pixelDataToVideoStream_v1_0_S00_AXI.vhd:227]
+INFO: [Synth 8-226] default block is never used [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/fbbd/hdl/pixelDataToVideoStream_v1_0_S00_AXI.vhd:357]
+WARNING: [Synth 8-614] signal 'i_frameCnt' is read in the process but is not in the sensitivity list [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/fbbd/hdl/pixelDataToVideoStream_v1_0_S00_AXI.vhd:352]
+WARNING: [Synth 8-614] signal 'i_isStalled' is read in the process but is not in the sensitivity list [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/fbbd/hdl/pixelDataToVideoStream_v1_0_S00_AXI.vhd:352]
+INFO: [Synth 8-256] done synthesizing module 'pixelDataToVideoStream_v1_0_S00_AXI' (1#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/fbbd/hdl/pixelDataToVideoStream_v1_0_S00_AXI.vhd:89]
+INFO: [Synth 8-256] done synthesizing module 'pixelDataToVideoStream_v1_0' (2#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/fbbd/hdl/pixelDataToVideoStream_v1_0.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'atelier4_pixelDataToVideoStre_0_0' (3#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_pixelDataToVideoStre_0_0/synth/atelier4_pixelDataToVideoStre_0_0.vhd:95]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2303.988 ; gain = 0.000 ; free physical = 5507 ; free virtual = 17191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2303.988 ; gain = 0.000 ; free physical = 6452 ; free virtual = 18135
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2303.988 ; gain = 0.000 ; free physical = 6452 ; free virtual = 18135
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2303.988 ; gain = 0.000 ; free physical = 6527 ; free virtual = 18212
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2367.891 ; gain = 0.000 ; free physical = 6777 ; free virtual = 18498
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2367.891 ; gain = 0.000 ; free physical = 6773 ; free virtual = 18494
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2367.891 ; gain = 63.902 ; free physical = 6838 ; free virtual = 18530
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2367.891 ; gain = 63.902 ; free physical = 6838 ; free virtual = 18530
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2367.891 ; gain = 63.902 ; free physical = 6838 ; free virtual = 18530
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'pixelDataToVideoStream_v1_0'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/fbbd/hdl/pixelDataToVideoStream_v1_0.vhd:150]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/fbbd/hdl/pixelDataToVideoStream_v1_0.vhd:150]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 waiting |                             0001 |                               00
+                     sof |                             0010 |                               11
+               streaming |                             0100 |                               01
+                     eol |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'pixelDataToVideoStream_v1_0'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/fbbd/hdl/pixelDataToVideoStream_v1_0.vhd:150]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2367.891 ; gain = 63.902 ; free physical = 6826 ; free virtual = 18525
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               12 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 3     
+	   4 Input   32 Bit        Muxes := 3     
+	   2 Input   12 Bit        Muxes := 2     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 4     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 10    
+	   4 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2367.891 ; gain = 63.902 ; free physical = 7566 ; free virtual = 19268
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 2367.891 ; gain = 63.902 ; free physical = 10867 ; free virtual = 22565
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 2367.891 ; gain = 63.902 ; free physical = 10866 ; free virtual = 22564
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 2367.891 ; gain = 63.902 ; free physical = 10853 ; free virtual = 22551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 2367.891 ; gain = 63.902 ; free physical = 8057 ; free virtual = 19762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 2367.891 ; gain = 63.902 ; free physical = 8055 ; free virtual = 19760
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 2367.891 ; gain = 63.902 ; free physical = 8049 ; free virtual = 19755
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 2367.891 ; gain = 63.902 ; free physical = 8046 ; free virtual = 19752
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 2367.891 ; gain = 63.902 ; free physical = 8043 ; free virtual = 19749
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 2367.891 ; gain = 63.902 ; free physical = 8040 ; free virtual = 19746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    17|
+|2     |LUT1   |     5|
+|3     |LUT2   |    26|
+|4     |LUT3   |     5|
+|5     |LUT4   |    21|
+|6     |LUT5   |    34|
+|7     |LUT6   |    23|
+|8     |FDCE   |    60|
+|9     |FDPE   |     1|
+|10    |FDRE   |   103|
+|11    |FDSE   |     3|
+|12    |LD     |     4|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 2367.891 ; gain = 63.902 ; free physical = 8040 ; free virtual = 19746
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 2367.891 ; gain = 0.000 ; free physical = 8786 ; free virtual = 20492
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 2367.891 ; gain = 63.902 ; free physical = 8784 ; free virtual = 20490
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2367.891 ; gain = 0.000 ; free physical = 9482 ; free virtual = 21188
+INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2367.891 ; gain = 0.000 ; free physical = 10083 ; free virtual = 21788
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  LD => LDCE: 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+32 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:35 . Memory (MB): peak = 2367.891 ; gain = 64.031 ; free physical = 10246 ; free virtual = 21952
+INFO: [Common 17-1381] The checkpoint '/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.runs/atelier4_pixelDataToVideoStre_0_0_synth_1/atelier4_pixelDataToVideoStre_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP atelier4_pixelDataToVideoStre_0_0, cache-ID = c71e4bd30393c1cc
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.runs/atelier4_pixelDataToVideoStre_0_0_synth_1/atelier4_pixelDataToVideoStre_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file atelier4_pixelDataToVideoStre_0_0_utilization_synth.rpt -pb atelier4_pixelDataToVideoStre_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 16 09:55:45 2022...

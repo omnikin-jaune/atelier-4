@@ -1,0 +1,542 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jun 16 09:54:16 2022
+# Process ID: 11172
+# Current directory: /home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.runs/bd_0837_smartconnect_0_0_synth_1
+# Command line: vivado -log bd_0837_smartconnect_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0837_smartconnect_0_0.tcl
+# Log file: /home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.runs/bd_0837_smartconnect_0_0_synth_1/bd_0837_smartconnect_0_0.vds
+# Journal file: /home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.runs/bd_0837_smartconnect_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source bd_0837_smartconnect_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.ipdefs/mycolorRegister_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.ipdefs/pixelDataToVideoStream_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.ipdefs/rgb2dvi'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.ipdefs/tmds_v1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/usr/share/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top bd_0837_smartconnect_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11513
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 2284.996 ; gain = 0.000 ; free physical = 4372 ; free virtual = 15997
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_0837_smartconnect_0_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_0/ip/ip_0/synth/bd_0837_smartconnect_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/synth/bd_0cc7.v:10]
+INFO: [Synth 8-6157] synthesizing module 'clk_map_imp_SOQOCP' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/synth/bd_0cc7.v:1534]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_one_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_0/synth/bd_0cc7_one_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 1'b1 
+	Parameter CONST_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (1#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_one_0' (2#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_0/synth/bd_0cc7_one_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'bd_0cc7_psr_aclk_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_1/synth/bd_0cc7_psr_aclk_0.vhd:74]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_1/synth/bd_0cc7_psr_aclk_0.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
+INFO: [Synth 8-638] synthesizing module 'lpf' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+INFO: [Synth 8-3491] module 'SRL16' declared at '/usr/share/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78018' bound to instance 'POR_SRL_I' of component 'SRL16' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [/usr/share/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78018]
+	Parameter INIT bound to: 16'b0000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (3#1) [/usr/share/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78018]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter C_CDC_TYPE bound to: 1 - type: integer 
+	Parameter C_RESET_STATE bound to: 0 - type: integer 
+	Parameter C_SINGLE_BIT bound to: 1 - type: integer 
+	Parameter C_FLOP_INPUT bound to: 0 - type: integer 
+	Parameter C_VECTOR_WIDTH bound to: 2 - type: integer 
+	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (4#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (5#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+	Parameter C_SIZE bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (6#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (7#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (8#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'bd_0cc7_psr_aclk_0' (9#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_1/synth/bd_0cc7_psr_aclk_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_0cc7_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/synth/bd_0cc7.v:1583]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_0cc7_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/synth/bd_0cc7.v:1583]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_0cc7_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/synth/bd_0cc7.v:1583]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_0cc7_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/synth/bd_0cc7.v:1583]
+WARNING: [Synth 8-7023] instance 'psr_aclk' of module 'bd_0cc7_psr_aclk_0' has 10 connections declared, but only 6 given [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/synth/bd_0cc7.v:1583]
+INFO: [Synth 8-6155] done synthesizing module 'clk_map_imp_SOQOCP' (10#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/synth/bd_0cc7.v:1534]
+INFO: [Synth 8-6157] synthesizing module 'm00_exit_pipeline_imp_18C4U8I' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/synth/bd_0cc7.v:1888]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_m00e_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_32/synth/bd_0cc7_m00e_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [/usr/share/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (11#1) [/usr/share/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_m00e_0' (18#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_32/synth/bd_0cc7_m00e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm00_exit_pipeline_imp_18C4U8I' (19#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/synth/bd_0cc7.v:1888]
+INFO: [Synth 8-6157] synthesizing module 'm00_nodes_imp_1LPL5BY' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/synth/bd_0cc7.v:2189]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_m00arn_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_27/synth/bd_0cc7_m00arn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_m00arn_0' (29#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_27/synth/bd_0cc7_m00arn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_m00awn_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_29/synth/bd_0cc7_m00awn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_m00awn_0' (30#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_29/synth/bd_0cc7_m00awn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_m00bn_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_31/synth/bd_0cc7_m00bn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_m00bn_0' (31#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_31/synth/bd_0cc7_m00bn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_m00rn_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_28/synth/bd_0cc7_m00rn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_m00rn_0' (32#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_28/synth/bd_0cc7_m00rn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_m00wn_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_30/synth/bd_0cc7_m00wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_m00wn_0' (33#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_30/synth/bd_0cc7_m00wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm00_nodes_imp_1LPL5BY' (34#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/synth/bd_0cc7.v:2189]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_m00s2a_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_26/synth/bd_0cc7_m00s2a_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_m00s2a_0' (36#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_26/synth/bd_0cc7_m00s2a_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'm01_exit_pipeline_imp_11ZC1QQ' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/synth/bd_0cc7.v:2485]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_m01e_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_39/synth/bd_0cc7_m01e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_m01e_0' (37#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_39/synth/bd_0cc7_m01e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm01_exit_pipeline_imp_11ZC1QQ' (38#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/synth/bd_0cc7.v:2485]
+INFO: [Synth 8-6157] synthesizing module 'm01_nodes_imp_N0I5VS' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/synth/bd_0cc7.v:2786]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_m01arn_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_34/synth/bd_0cc7_m01arn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_m01arn_0' (39#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_34/synth/bd_0cc7_m01arn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_m01awn_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_36/synth/bd_0cc7_m01awn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_m01awn_0' (40#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_36/synth/bd_0cc7_m01awn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_m01bn_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_38/synth/bd_0cc7_m01bn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_m01bn_0' (41#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_38/synth/bd_0cc7_m01bn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_m01rn_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_35/synth/bd_0cc7_m01rn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_m01rn_0' (42#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_35/synth/bd_0cc7_m01rn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_m01wn_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_37/synth/bd_0cc7_m01wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_m01wn_0' (43#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_37/synth/bd_0cc7_m01wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm01_nodes_imp_N0I5VS' (44#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/synth/bd_0cc7.v:2786]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_m01s2a_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_33/synth/bd_0cc7_m01s2a_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_m01s2a_0' (45#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_33/synth/bd_0cc7_m01s2a_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'm02_exit_pipeline_imp_1DA34IA' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/synth/bd_0cc7.v:3082]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_m02e_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_46/synth/bd_0cc7_m02e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_m02e_0' (46#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_46/synth/bd_0cc7_m02e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm02_exit_pipeline_imp_1DA34IA' (47#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/synth/bd_0cc7.v:3082]
+INFO: [Synth 8-6157] synthesizing module 'm02_nodes_imp_CX4DQR' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/synth/bd_0cc7.v:3383]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_m02arn_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_41/synth/bd_0cc7_m02arn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_m02arn_0' (48#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_41/synth/bd_0cc7_m02arn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_m02awn_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_43/synth/bd_0cc7_m02awn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_m02awn_0' (49#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_43/synth/bd_0cc7_m02awn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_m02bn_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_45/synth/bd_0cc7_m02bn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_m02bn_0' (50#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_45/synth/bd_0cc7_m02bn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_m02rn_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_42/synth/bd_0cc7_m02rn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_m02rn_0' (51#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_42/synth/bd_0cc7_m02rn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_m02wn_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_44/synth/bd_0cc7_m02wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_m02wn_0' (52#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_44/synth/bd_0cc7_m02wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm02_nodes_imp_CX4DQR' (53#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/synth/bd_0cc7.v:3383]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_m02s2a_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_40/synth/bd_0cc7_m02s2a_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_m02s2a_0' (54#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_40/synth/bd_0cc7_m02s2a_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_s00a2s_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_20/synth/bd_0cc7_s00a2s_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_s00a2s_0' (56#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_20/synth/bd_0cc7_s00a2s_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 's00_entry_pipeline_imp_80J7RL' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/synth/bd_0cc7.v:3679]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_s00mmu_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_17/synth/bd_0cc7_s00mmu_0.sv:59]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_s00mmu_0' (61#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_17/synth/bd_0cc7_s00mmu_0.sv:59]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_s00sic_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_19/synth/bd_0cc7_s00sic_0.sv:59]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_s00sic_0' (64#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_19/synth/bd_0cc7_s00sic_0.sv:59]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_s00tr_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_18/synth/bd_0cc7_s00tr_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_s00tr_0' (67#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_18/synth/bd_0cc7_s00tr_0.sv:58]
+WARNING: [Synth 8-7071] port 'm_axi_awburst' of module 'bd_0cc7_s00tr_0' is unconnected for instance 's00_transaction_regulator' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/synth/bd_0cc7.v:4137]
+WARNING: [Synth 8-7071] port 'm_axi_arburst' of module 'bd_0cc7_s00tr_0' is unconnected for instance 's00_transaction_regulator' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/synth/bd_0cc7.v:4137]
+WARNING: [Synth 8-7023] instance 's00_transaction_regulator' of module 'bd_0cc7_s00tr_0' has 82 connections declared, but only 80 given [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/synth/bd_0cc7.v:4137]
+INFO: [Synth 8-6155] done synthesizing module 's00_entry_pipeline_imp_80J7RL' (68#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/synth/bd_0cc7.v:3679]
+INFO: [Synth 8-6157] synthesizing module 's00_nodes_imp_2LGW0B' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/synth/bd_0cc7.v:4220]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_sarn_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_21/synth/bd_0cc7_sarn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_sarn_0' (69#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_21/synth/bd_0cc7_sarn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_sawn_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_23/synth/bd_0cc7_sawn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_sawn_0' (70#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_23/synth/bd_0cc7_sawn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_sbn_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_25/synth/bd_0cc7_sbn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_sbn_0' (71#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_25/synth/bd_0cc7_sbn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_srn_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_22/synth/bd_0cc7_srn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_srn_0' (72#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_22/synth/bd_0cc7_srn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_swn_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_24/synth/bd_0cc7_swn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_swn_0' (73#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_24/synth/bd_0cc7_swn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 's00_nodes_imp_2LGW0B' (74#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/synth/bd_0cc7.v:4220]
+INFO: [Synth 8-6157] synthesizing module 'switchboards_imp_RDLVZ3' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/synth/bd_0cc7.v:4516]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_arinsw_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_2/synth/bd_0cc7_arinsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_arinsw_0' (77#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_2/synth/bd_0cc7_arinsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_aroutsw_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_7/synth/bd_0cc7_aroutsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_aroutsw_0' (78#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_7/synth/bd_0cc7_aroutsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_awinsw_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_4/synth/bd_0cc7_awinsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_awinsw_0' (79#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_4/synth/bd_0cc7_awinsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_awoutsw_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_9/synth/bd_0cc7_awoutsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_awoutsw_0' (80#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_9/synth/bd_0cc7_awoutsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_binsw_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_6/synth/bd_0cc7_binsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_binsw_0' (81#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_6/synth/bd_0cc7_binsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_boutsw_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_11/synth/bd_0cc7_boutsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_boutsw_0' (82#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_11/synth/bd_0cc7_boutsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'i_nodes_imp_1A7JDWN' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/synth/bd_0cc7.v:1592]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_arni_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_12/synth/bd_0cc7_arni_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_arni_0' (87#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_12/synth/bd_0cc7_arni_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_awni_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_14/synth/bd_0cc7_awni_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_awni_0' (88#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_14/synth/bd_0cc7_awni_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_bni_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_16/synth/bd_0cc7_bni_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_bni_0' (91#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_16/synth/bd_0cc7_bni_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_rni_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_13/synth/bd_0cc7_rni_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_rni_0' (92#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_13/synth/bd_0cc7_rni_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_wni_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_15/synth/bd_0cc7_wni_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_wni_0' (93#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_15/synth/bd_0cc7_wni_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'i_nodes_imp_1A7JDWN' (94#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/synth/bd_0cc7.v:1592]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_rinsw_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_3/synth/bd_0cc7_rinsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_rinsw_0' (95#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_3/synth/bd_0cc7_rinsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_routsw_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_8/synth/bd_0cc7_routsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_routsw_0' (96#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_8/synth/bd_0cc7_routsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_winsw_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_5/synth/bd_0cc7_winsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_winsw_0' (97#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_5/synth/bd_0cc7_winsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_0cc7_woutsw_0' [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_10/synth/bd_0cc7_woutsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7_woutsw_0' (98#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_10/synth/bd_0cc7_woutsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'switchboards_imp_RDLVZ3' (99#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/synth/bd_0cc7.v:4516]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0cc7' (100#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/synth/bd_0cc7.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0837_smartconnect_0_0' (101#1) [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_0/ip/ip_0/synth/bd_0837_smartconnect_0_0.v:57]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 2284.996 ; gain = 0.000 ; free physical = 6797 ; free virtual = 18470
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 2297.863 ; gain = 12.867 ; free physical = 6856 ; free virtual = 18530
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 2297.863 ; gain = 12.867 ; free physical = 6856 ; free virtual = 18530
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2330.879 ; gain = 0.000 ; free physical = 6153 ; free virtual = 17854
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_0/ip/ip_0/ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_0/ip/ip_0/ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_1/bd_0cc7_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_1/bd_0cc7_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_1/bd_0cc7_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0_1/bd_1/ip/ip_1/bd_0cc7_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.runs/bd_0837_smartconnect_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.runs/bd_0837_smartconnect_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-1715] 1 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2690.973 ; gain = 0.000 ; free physical = 5482 ; free virtual = 17183
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 13 instances were transformed.
+  FDR => FDRE: 12 instances
+  SRL16 => SRL16E: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.31 ; elapsed = 00:00:00.46 . Memory (MB): peak = 2696.910 ; gain = 5.938 ; free physical = 5267 ; free virtual = 16968
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 2696.910 ; gain = 411.914 ; free physical = 6871 ; free virtual = 18544
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 2696.910 ; gain = 411.914 ; free physical = 6869 ; free virtual = 18543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.runs/bd_0837_smartconnect_0_0_synth_1/dont_touch.xdc, line 234).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_exit_pipeline/m00_exit/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_exit_pipeline/m01_exit/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_exit_pipeline/m02_exit/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_entry_pipeline/s00_mmu/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_entry_pipeline/s00_si_converter/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_entry_pipeline/s00_transaction_regulator/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:43 . Memory (MB): peak = 2696.910 ; gain = 411.914 ; free physical = 6872 ; free virtual = 18546
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:38 ; elapsed = 00:00:47 . Memory (MB): peak = 2696.910 ; gain = 411.914 ; free physical = 6822 ; free virtual = 18495
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    7 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 25    
+	   2 Input    2 Bit       Adders := 6     
+	   3 Input    1 Bit       Adders := 10    
+	   2 Input    1 Bit       Adders := 5     
++---XORs : 
+	   2 Input      1 Bit         XORs := 96    
++---Registers : 
+	             2178 Bit    Registers := 2     
+	              148 Bit    Registers := 2     
+	               76 Bit    Registers := 1     
+	               72 Bit    Registers := 1     
+	               47 Bit    Registers := 3     
+	               33 Bit    Registers := 3     
+	               26 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 25    
+	                3 Bit    Registers := 63    
+	                2 Bit    Registers := 19    
+	                1 Bit    Registers := 309   
++---Muxes : 
+	   2 Input 2178 Bit        Muxes := 2     
+	   2 Input  128 Bit        Muxes := 8     
+	   2 Input   56 Bit        Muxes := 4     
+	   2 Input   53 Bit        Muxes := 1     
+	   4 Input   53 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 2     
+	   7 Input    8 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 11    
+	   4 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 8     
+	   4 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 40    
+	   2 Input    1 Bit        Muxes := 107   
+	   5 Input    1 Bit        Muxes := 10    
+	   4 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:55 . Memory (MB): peak = 2696.910 ; gain = 411.914 ; free physical = 10922 ; free virtual = 22620
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:53 ; elapsed = 00:01:04 . Memory (MB): peak = 2696.910 ; gain = 411.914 ; free physical = 10251 ; free virtual = 21957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:01:06 . Memory (MB): peak = 2696.910 ; gain = 411.914 ; free physical = 10134 ; free virtual = 21843
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:56 ; elapsed = 00:01:09 . Memory (MB): peak = 2696.910 ; gain = 411.914 ; free physical = 7991 ; free virtual = 19700
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:00 ; elapsed = 00:01:14 . Memory (MB): peak = 2696.910 ; gain = 411.914 ; free physical = 8272 ; free virtual = 19980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:00 ; elapsed = 00:01:14 . Memory (MB): peak = 2696.910 ; gain = 411.914 ; free physical = 8271 ; free virtual = 19979
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:01 ; elapsed = 00:01:14 . Memory (MB): peak = 2696.910 ; gain = 411.914 ; free physical = 8216 ; free virtual = 19924
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:01 ; elapsed = 00:01:14 . Memory (MB): peak = 2696.910 ; gain = 411.914 ; free physical = 8224 ; free virtual = 19932
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:01 ; elapsed = 00:01:14 . Memory (MB): peak = 2696.910 ; gain = 411.914 ; free physical = 8169 ; free virtual = 19878
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:01 ; elapsed = 00:01:14 . Memory (MB): peak = 2696.910 ; gain = 411.914 ; free physical = 8140 ; free virtual = 19849
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT1  |   152|
+|2     |LUT2  |    90|
+|3     |LUT3  |    77|
+|4     |LUT4  |    58|
+|5     |LUT5  |    81|
+|6     |LUT6  |    88|
+|7     |SRL16 |     1|
+|8     |FDCE  |   168|
+|9     |FDR   |     4|
+|10    |FDRE  |   320|
+|11    |FDSE  |    36|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:01 ; elapsed = 00:01:14 . Memory (MB): peak = 2696.910 ; gain = 411.914 ; free physical = 8139 ; free virtual = 19847
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:45 ; elapsed = 00:00:57 . Memory (MB): peak = 2696.910 ; gain = 12.867 ; free physical = 8149 ; free virtual = 19857
+Synthesis Optimization Complete : Time (s): cpu = 00:01:01 ; elapsed = 00:01:14 . Memory (MB): peak = 2696.910 ; gain = 411.914 ; free physical = 8149 ; free virtual = 19857
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:00.52 . Memory (MB): peak = 2696.910 ; gain = 0.000 ; free physical = 8403 ; free virtual = 20112
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2696.910 ; gain = 0.000 ; free physical = 6563 ; free virtual = 18258
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  FDR => FDRE: 4 instances
+  SRL16 => SRL16E: 1 instance 
+
+INFO: [Common 17-83] Releasing license: Synthesis
+172 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:14 ; elapsed = 00:01:24 . Memory (MB): peak = 2696.910 ; gain = 411.914 ; free physical = 6534 ; free virtual = 18228
+INFO: [Common 17-1381] The checkpoint '/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.runs/bd_0837_smartconnect_0_0_synth_1/bd_0837_smartconnect_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_0837_smartconnect_0_0, cache-ID = 91b9e4a718a8991d
+INFO: [Coretcl 2-1174] Renamed 228 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/raesangur/github/atelier-4/s4InfoAtelier4/s4InfoAtelier4.runs/bd_0837_smartconnect_0_0_synth_1/bd_0837_smartconnect_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bd_0837_smartconnect_0_0_utilization_synth.rpt -pb bd_0837_smartconnect_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 16 09:56:11 2022...

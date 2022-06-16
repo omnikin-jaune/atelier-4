@@ -1,0 +1,23 @@
+<AutoPilot:solution xmlns:AutoPilot="com.autoesl.autopilot.solution">
+    <name>
+        <value string="prj"/>
+    </name>
+    <project>
+        <value string="bd_0837_vsc_0"/>
+    </project>
+    <flowTarget value="vivado"/>
+    <targetInfo>
+        <TargetInfo value="xc7z010:-clg400:-1"/>
+    </targetInfo>
+    <libraryList>
+        <library value="xilinx/zynq/zynq" name="DefaultPlatform"/>
+    </libraryList>
+    <clockList>
+        <clock name="ap_clk" period="13.468" default="false"/>
+    </clockList>
+    <config>
+        <config_dataflow default_channel="fifo"/>
+        <config_rtl module_prefix="bd_0837_vsc_0_"/>
+    </config>
+</AutoPilot:solution>
+
